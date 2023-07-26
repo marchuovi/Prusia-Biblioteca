@@ -1,7 +1,8 @@
 
 <?php
     include('db.php');
-    include('partials/head.php')
+    include('partials/head.php');
+    include('partials/header.php');
 ?>
 
 <section class='containerBook'>
