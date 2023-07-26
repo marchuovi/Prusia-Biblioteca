@@ -2,17 +2,18 @@
 
     <div class="logo-container">
     <a class="logo-brand" href="#">
-      <img src="assets\logoprusia.png" alt="logo Prusia Biblioteca" width="30" height="24">
+      <img src="C:\xampp\htdocs\prusia-biblioteca\assets\logoprusia.png" alt="logo Prusia Biblioteca" width="30" height="24">
     </a>
     </div>
 
     <nav>
     <ul>
-       <li> <a href="#">Inicio</a></li>
-       <li> <a href="#">Somos</a></li>
-       <li> <a href="#">Prusia Biblioteca</a></li>
-       <li> <a href="#">Contacto</a></li>
+       <li> <a href="#" class="text-decoration-none">Inicio</a></li>
+       <li> <a href="#" class="text-decoration-none">Somos</a></li>
+       <li> <a href="#" class="text-decoration-none">Prusia Biblioteca</a></li>
+       <li> <a href="#" class="text-decoration-none">Contacto</a></li>
     </ul>
     </nav>
 
 </header>
+

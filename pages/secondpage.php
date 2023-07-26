@@ -5,6 +5,16 @@
     include('C:\xampp\htdocs\prusia-biblioteca\partials\header.php');
 ?>
 
+<div>
+    <form action="C:\xampp\htdocs\prusia-biblioteca\partials\search.php" method="POST">
+        <label for="search">Prueba a buscar con ‘historia/ ISBN/ autoría...’</label>
+        <input name="search" id="search" type="text">
+            <button> 
+                <span class="material-symbols-outlined"></span>
+            </button>
+    </form>
+</div>
+
 <section class='containerBook'>
 
 <?php
@@ -26,6 +36,6 @@
 
 </section>
 
-  <a href="pages\secondpage.php" type="button" class="btn btn-warning">Descubre más libros</a>
-
    <?php include('C:\xampp\htdocs\prusia-biblioteca\partials\footer.php') ?>
+
+   
