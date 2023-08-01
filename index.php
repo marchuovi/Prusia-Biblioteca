@@ -15,7 +15,7 @@
 ?>
 
 <div class="card" style="width: 10rem;">
-  <img src= <?php echo $row ['foto'] ?> class="card-img-top" alt="portada del libro">
+  <img src= <?php echo $row ['foto'] ?> class="card-img-top" alt="portada del libro: <?php echo $row ['título'] ?>" >
   <div class="card-body">
     <h5><?php echo $row ['título'] ?></h5>
     <p class="card-text"> <?= $row ['autoría'] ?></p>
