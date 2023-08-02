@@ -9,7 +9,7 @@
     $search= $_POST['search'];
 
 // $query = "SELECT * FROM libros WHERE autoría LIKE '%$search%' OR ISBN LIKE '%$search%' OR título LIKE '%$search%'OR año LIKE '%$search%'";
-$query= "SELECT * FROM libros WHERE concat(autoría,ISBN,año) LIKE '%$search%'";
+$query= "SELECT * FROM libros WHERE concat(título,autoría,ISBN) LIKE '%$search%'";
 
 $result = mysqli_query($conn,$query);
 

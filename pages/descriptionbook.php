@@ -1,13 +1,14 @@
 <?php
     include('C:\xampp\htdocs\prusia-biblioteca\db.php');
     include('C:\xampp\htdocs\prusia-biblioteca\partials\head.php');
-    
     include('C:\xampp\htdocs\prusia-biblioteca\partials\search.php');
+
+    while ($row = mysqli_fetch_array ($result)) {
 ?>
 
 <main>
 
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3" style="max-width: 1000px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src= <?php echo $row ['foto'] ?> class="img-fluid rounded-start" alt="portada del libro: <?php echo $row ['título'] ?>">
@@ -34,7 +35,7 @@
     </ul>
 </section>
 
-    <section>
+  <section>
     <article>
         <p>Ficha técnica</p>
         <p class="card-text"> ISBN: <?= $row ['ISBN'] ?></p>
@@ -43,15 +44,21 @@
         <!--<p class="card-text"> Categorías: </p>-->
     </article>
 
-    <article>
+      <article>
         <h4>¡Me lo compro!</h4>
         <article>
             <a href="#" type="button" class="btn btn-warning">Nuevos</a>
             <a href="#" type="button" class="btn btn-warning">Segunda mano</a><!--Añadir a mi base de datos dos campos nuevos-->
         </article>
-    </article>
+      </article>
     
+    </section>
+
+    <section>
+      <h4>Mi opinión</h4>
+      <p class="card-text"> <?= $row ['mi_opinión'] ?></p>
     </section>
 </main>
 
-<?php include('C:\xampp\htdocs\prusia-biblioteca\partials\footer.php') ?>
+<?php };
+include('C:\xampp\htdocs\prusia-biblioteca\partials\footer.php') ?>

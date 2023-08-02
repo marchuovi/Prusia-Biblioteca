@@ -6,10 +6,10 @@
 ?>
 
 <div>
-    <form action="C:\xampp\htdocs\prusia-biblioteca\partials\search.php" method="POST">
+    <form action="/prusia-biblioteca/pages/descriptionbook.php" method="POST">
         <label for="search">Prueba a buscar con ‘historia/ ISBN/ autoría...’</label>
         <input name="search" id="search" type="text">
-            <button> 
+            <button value="search" type="submit"> 
                 <span class="material-symbols-outlined"></span>
             </button>
     </form>
